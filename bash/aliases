@@ -4,3 +4,8 @@ alias tm='top -o vsize' # memory
 
 # misc
 alias reload='. ~/.bash_profile'
+
+function take() { 
+    mkdir -p "$1"
+    cd "$1" 
+}

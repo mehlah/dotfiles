@@ -1,0 +1,6 @@
+# Processes
+alias tu='top -o cpu' # cpu
+alias tm='top -o vsize' # memory
+
+# misc
+alias reload='. ~/.bash_profile'

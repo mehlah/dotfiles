@@ -80,6 +80,21 @@
 	command! -nargs=* Wrap set wrap linebreak nolist
 	command! -nargs=* Maxsize set columns=1000 lines=1000
 	
+		" Toggle Background Function
+		function! ToggleBackground()
+		    if (w:solarized_style=="dark")
+		    let w:solarized_style="light"
+		    colorscheme solarized
+		else
+		    let w:solarized_style="dark"
+		    colorscheme solarized
+		endif
+		endfunction
+		command! Togbg call ToggleBackground()
+		nnoremap <F5> :call ToggleBackground()<CR>
+		inoremap <F5> <ESC>:call ToggleBackground()<CR>a
+		vnoremap <F5> <ESC>:call ToggleBackground()<CR>
+	
 	nmap <D-[> <<
 	nmap <D-]> >>
 	vmap <D-[> <gv

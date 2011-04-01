@@ -17,7 +17,8 @@
 	
 
 " Vim GUI
-	colorscheme li3
+	set background=dark
+	colorscheme solarized
 
   set guioptions-=T " GUI Option to remove the Toolbar (T)
 	set guioptions+=c " do not use modal alert dialogs! (Prefer Vim style prompt.) http://stackoverflow.com/questions/4193654/using-vim-warning-style-in-gvim

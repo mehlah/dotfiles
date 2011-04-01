@@ -82,11 +82,11 @@
 	
 		" Toggle Background Function
 		function! ToggleBackground()
-		    if (w:solarized_style=="dark")
-		    let w:solarized_style="light"
+		    if (g:solarized_style=="dark")
+		    let g:solarized_style="light"
 		    colorscheme solarized
 		else
-		    let w:solarized_style="dark"
+		    let g:solarized_style="dark"
 		    colorscheme solarized
 		endif
 		endfunction

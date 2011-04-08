@@ -29,3 +29,5 @@
 [core]
         pager = less -FRSX
         whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[http]
+		proxy = cache.univ-st-etienne.fr:3128

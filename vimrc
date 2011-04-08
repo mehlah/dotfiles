@@ -59,8 +59,8 @@
 
 		autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 		autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-		autocmd FileType html,css,ctp,php setlocal ts=2 sts=2 sw=2 noexpandtab
-		autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+		autocmd FileType html,css,ctp,javascript setlocal ts=2 sts=2 sw=2 noexpandtab
+		autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
 		autocmd FileType markdown setlocal wrap linebreak nolist
 		autocmd BufNewFile,BufRead *.rss setfiletype xml
 		autocmd BufNewFile,BufRead *.ctp setfiletype html
@@ -79,21 +79,6 @@
 	nmap <silent> <leader>n :silent :nohlsearch<CR>
 	command! -nargs=* Wrap set wrap linebreak nolist
 	command! -nargs=* Maxsize set columns=1000 lines=1000
-	
-		" Toggle Background Function
-		function! ToggleBackground()
-		    if (g:solarized_style=="dark")
-		    let g:solarized_style="light"
-		    colorscheme solarized
-		else
-		    let g:solarized_style="dark"
-		    colorscheme solarized
-		endif
-		endfunction
-		command! Togbg call ToggleBackground()
-		nnoremap <F5> :call ToggleBackground()<CR>
-		inoremap <F5> <ESC>:call ToggleBackground()<CR>a
-		vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 	
 	nmap <D-[> <<
 	nmap <D-]> >>

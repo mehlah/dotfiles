@@ -1,2 +1,4 @@
 PATH=$PATH:/usr/local/lib/lithium/libraries/lithium/console
 export NODE_PATH=/usr/local/lib/node
+export PATH="$(brew --prefix)/bin:$PATH"
+export GEM_HOME='/usr/local/Cellar/gems/1.8'

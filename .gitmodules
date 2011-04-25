@@ -25,3 +25,6 @@
 [submodule "vim/bundle/hexhighlight"]
 	path = vim/bundle/hexhighlight
 	url = https://github.com/vim-scripts/hexHighlight.vim
+[submodule "vim/bundle/color-sampler-pack"]
+	path = vim/bundle/color-sampler-pack
+	url = https://github.com/vim-scripts/Color-Sampler-Pack.git

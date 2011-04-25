@@ -44,7 +44,7 @@
 
 " Formatting
   syntax on
-  set list
+  set nolist
 	set nowrap " don't wrap lines
 	set smartindent
 	set autoindent " always set autoindenting on

@@ -28,3 +28,6 @@
 [submodule "vim/bundle/color-sampler-pack"]
 	path = vim/bundle/color-sampler-pack
 	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git

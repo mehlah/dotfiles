@@ -1,5 +1,4 @@
 " Vim color file
-" Based on Dusk color scheme by Ajit Thakkar (http://www.vim.org/scripts/script.php?script_id=758)
 " Maintainer:	Mehdi Lahmam B. (mehlah)
 
 

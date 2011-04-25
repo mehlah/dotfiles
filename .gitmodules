@@ -22,3 +22,6 @@
 [submodule "vim/bundle/solarized"]
 	path = vim/bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/hexhighlight"]
+	path = vim/bundle/hexhighlight
+	url = https://github.com/vim-scripts/hexHighlight.vim

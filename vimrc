@@ -15,6 +15,8 @@
 	set nobackup " 70's are gone baby
 	set noswapfile
 	
+	let mapleader = ","
+	let g:mapleader = ","
 
 " Vim GUI
 	set background=dark
@@ -169,3 +171,13 @@
 		  call cursor(l, c)
 		endfunction
 		nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+
+	" Show syntax highlighting groups for word under cursor
+		nmap <C-S-P> :call <SID>SynStack()<CR>
+		function! <SID>SynStack()
+			if !exists("*synstack")
+				return
+		endif
+			echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+		endfunc
+

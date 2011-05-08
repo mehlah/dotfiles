@@ -1,9 +1,9 @@
 
 " Base
 	set nocompatible " Vim settings rather then Vi settings
-	
+
 	" Pathogen plugin init
-	filetype off 
+	filetype off
 	call pathogen#runtime_append_all_bundles()
 	call pathogen#helptags()
 
@@ -11,10 +11,16 @@
 	set hidden
 	set encoding=utf-8
 	set history=100
-	
+
 	set nobackup " 70's are gone baby
 	set noswapfile
-	
+
+	" No EOL
+	set binary noeol
+	if has("autocmd")
+		au BufWritePre * :set binary | set noeol
+	endif
+
 	let mapleader = ","
 	let g:mapleader = ","
 
@@ -37,7 +43,7 @@
 		set laststatus=1 " show statusline only if there are > 1 windows
 		set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 	endif
-	
+
 	set backspace=indent,eol,start
 	set number "turn on line numbers
 
@@ -54,7 +60,7 @@
 	set shiftwidth=2
 	set noexpandtab
 	set listchars=tab:▸\ ,eol:¬
-	
+
 	if has("autocmd")
 		filetype on
 		filetype plugin indent on
@@ -66,14 +72,14 @@
 		autocmd FileType markdown setlocal wrap linebreak nolist
 		autocmd BufNewFile,BufRead *.rss setfiletype xml
 		autocmd BufNewFile,BufRead *.ctp setfiletype html
-  endif	
+  endif
 
 
 " Key mapping
-	
+
 	" visually select the text that was last edited/pasted
 	nmap gV `[v`]
-	
+
 	" toggles and switches
 	nmap <silent> <leader>l :set list!<CR>
 	nmap <silent> <leader>w :set wrap!<CR>
@@ -81,7 +87,7 @@
 	nmap <silent> <leader>n :silent :nohlsearch<CR>
 	command! -nargs=* Wrap set wrap linebreak nolist
 	command! -nargs=* Maxsize set columns=1000 lines=1000
-	
+
 	nmap <D-[> <<
 	nmap <D-]> >>
 	vmap <D-[> <gv
@@ -93,13 +99,13 @@
 	" bubble multiple lines
 	vmap <C-Up> [egv
 	vmap <C-Down> ]egv
-	
+
 	" edit in new w|s|v|t path/to/directory/of/current/file/
 	map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
 	map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 	map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 	map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
-	
+
 
 	" load current buffer in a given browser
 	abbrev ff :! open -a firefox.app %:p<cr>
@@ -141,7 +147,7 @@
 		  endif
 		  call SummarizeTabs()
 		endfunction
-		 
+
 		function! SummarizeTabs()
 		  try
 				echohl ModeMsg
@@ -171,6 +177,8 @@
 		  call cursor(l, c)
 		endfunction
 		nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+
+		autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 
 	" Show syntax highlighting groups for word under cursor
 		nmap <C-S-P> :call <SID>SynStack()<CR>

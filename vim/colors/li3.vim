@@ -57,10 +57,10 @@ hi   Type              guifg=#ffffff   guibg=NONE      gui=NONE
 hi   Underlined        guifg=NONE      guibg=NONE      gui=underline
 
 " Php
-hi   phpType         guifg=#d42aae     guibg=NONE      gui=NONE
-hi   phpSpecial      guifg=#d42aae     guibg=NONE      gui=NONE
-hi   phpInclude      guifg=#d42aae     guibg=NONE      gui=NONE
-hi   phpStatement    guifg=#d42aae     guibg=NONE      gui=NONE
+hi   phpType         guifg=#d42aae     guibg=NONE      gui=bold
+hi   phpSpecial      guifg=#d42aae     guibg=NONE      gui=bold
+hi   phpInclude      guifg=#d42aae     guibg=NONE      gui=bold
+hi   phpStatement    guifg=#d42aae     guibg=NONE      gui=bold
 hi   phpIdentifier   guifg=#00a8e6     guibg=NONE      gui=NONE
 hi   phpVarSelector  guifg=#00a8e6     guibg=NONE      gui=NONE
 hi   phpOperator     guifg=#f8f8f8     guibg=NONE      gui=NONE
@@ -93,4 +93,3 @@ hi   cssClassName          guifg=#ffffff   guibg=NONE   gui=NONE
 hi   cssValueLength        guifg=#be64ff   guibg=NONE   gui=NONE
 hi   cssCommonAttr         guifg=#65bbff   guibg=NONE   gui=bold,italic
 hi   cssBraces             guifg=NONE      guibg=NONE   gui=NONE
-

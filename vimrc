@@ -139,17 +139,17 @@
 	" From http://vimcasts.org/episodes/tabs-and-spaces/
 		command! -nargs=* Stab call Stab()
 		function! Stab()
-		  let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
-		  if l:tabstop > 0
+			let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
+			if l:tabstop > 0
 				let &l:sts = l:tabstop
 				let &l:ts = l:tabstop
 				let &l:sw = l:tabstop
-		  endif
-		  call SummarizeTabs()
+			endif
+			call SummarizeTabs()
 		endfunction
 
 		function! SummarizeTabs()
-		  try
+			try
 				echohl ModeMsg
 				echon 'tabstop='.&l:ts
 				echon ' shiftwidth='.&l:sw
@@ -161,30 +161,30 @@
 				end
 				finally
 				echohl None
-		  endtry
+			endtry
 		endfunction
 
 	" Strip trailing whitespaces
 		function! Preserve(command)
-		  " Preparation: save last search, and cursor position.
-		  let _s=@/
-		  let l = line(".")
-		  let c = col(".")
-		  " Do the business:
-		  execute a:command
-		  " Clean up: restore previous search history, and cursor position
-		  let @/=_s
-		  call cursor(l, c)
+			" Preparation: save last search, and cursor position.
+			let _s=@/
+			let l = line(".")
+			let c = col(".")
+			" Do the business:
+			execute a:command
+			" Clean up: restore previous search history, and cursor position
+			let @/=_s
+			call cursor(l, c)
 		endfunction
 		nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 		autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 
-	" Show syntax highlighting groups for word under cursor
+		" Show syntax highlighting groups for word under cursor
 		nmap <C-S-P> :call <SID>SynStack()<CR>
 		function! <SID>SynStack()
 			if !exists("*synstack")
 				return
-		endif
+			endif
 			echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 		endfunc

@@ -50,3 +50,8 @@
 	path = vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
 	ignore=dirty
+[submodule "vim/bundle/html5-syntax"]
+	path = vim/bundle/html5-syntax
+	url = https://github.com/othree/html5-syntax.vim.git
+	ignore=dirty
+

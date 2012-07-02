@@ -319,3 +319,7 @@
 	path = vim/bundle/vim-scripts-YankRing
 	url = https://github.com/vim-scripts/YankRing.vim
   ignore = dirty
+[submodule "vim/bundle/mehlah-vim-li3"]
+	path = vim/bundle/mehlah-vim-li3
+	url = https://github.com/mehlah/vim-li3.git
+  ignore = dirty

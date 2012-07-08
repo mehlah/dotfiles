@@ -13,3 +13,6 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
 nmap ,w :StripTrailingWhitespaces<CR>
+
+" Strip whitespaces automatially before writes
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()

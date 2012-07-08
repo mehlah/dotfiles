@@ -26,8 +26,14 @@ set autoread                    "Reload files changed outside vim
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-"turn on syntax highlighting
+" Turn on syntax highlighting
 syntax on
+
+" No EOL
+set binary noeol
+if has("autocmd")
+  au BufWritePre * :set binary | set noeol
+endif
 
 " ================ Search Settings  =================
 
@@ -68,6 +74,9 @@ set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
+" php specific rules
+autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab linespace=4
+
 " ================ Folds ============================
 
 set foldmethod=indent   "fold based on indent
@@ -89,8 +98,6 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
-
-"
 
 " ================ Scrolling ========================
 

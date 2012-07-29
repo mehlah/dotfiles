@@ -99,3 +99,7 @@ alias sgi='sudo gem install --no-ri --no-rdoc'
 
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
+
+# Lithium
+alias li3resources='mkdir -p resources/tmp/cache/templates && mkdir resources/tmp/logs && mkdir resources/tmp/tests && chmod -R 777 resources/tmp'
+alias li3='~/playground/li3-libraries/lithium/console/li3 '

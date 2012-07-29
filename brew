@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+echo findutils
+
+# Install wget with IRI support
+brew install wget --enable-iri
+
+brew tap josegonzalez/homebrew-php
+brew install php54 --without-apache --with-fpm
+brew install php-54-mongo
+brew install php-54-xdebug
+
+# Install everything else
+brew install macvim
+brew install ack
+#brew install exiv2
+brew install git
+#brew install imagemagick
+brew install lynx
+brew install node
+brew install rename
+brew install tree
+brew install tmux
+brew install webkit2png
+brew install nginx
+brew install redis
+brew install gearman
+brew install mongodb
+brew install neo4j
+brew install phantomjs

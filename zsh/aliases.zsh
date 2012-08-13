@@ -103,3 +103,6 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 # Lithium
 alias li3resources='mkdir -p resources/tmp/cache/templates && mkdir resources/tmp/logs && mkdir resources/tmp/tests && chmod -R 777 resources/tmp'
 alias li3='libaries/lithium/console/li3 '
+
+# No auto-correct
+alias knife='nocorrect knife'

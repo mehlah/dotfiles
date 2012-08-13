@@ -11,7 +11,7 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
-  plugins=(vi-mode ruby zsh-syntax-highlighting history-substring-search)
+  plugins=(vi-mode ruby zsh-syntax-highlighting history-substring-search knife cap)
 
   # Source Robby's Oh-my-zsh
   source $ZSH/oh-my-zsh.sh # OMZ Robby Russell (https://github.com/robbyrussell/oh-my-zsh)

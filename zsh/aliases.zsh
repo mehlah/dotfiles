@@ -18,7 +18,9 @@ alias ae='vi $dotfiles/zsh/aliases.zsh' #alias edit
 alias ar='source $dotfiles/zsh/aliases.zsh'  #alias reload
 
 # vim using
-alias vim=$(brew ls macvim | grep Contents/MacOS/Vim)
+if [ "$(command -v brew)" ]; then
+	alias vim=$(brew ls macvim | grep Contents/MacOS/Vim)
+fi
 
 # vimrc editing
 alias ve='vi ~/.vimrc'

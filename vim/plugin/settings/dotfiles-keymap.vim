@@ -113,7 +113,7 @@ autocmd FileType rspec map <buffer> <D-j> }
 autocmd FileType rspec map <buffer> <D-k> {
 
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
-nnoremap <silent> <C-\> :NERDTreeFind<CR>
+nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
 " Command-/ to toggle comments
 map <D-/> :TComment<CR>

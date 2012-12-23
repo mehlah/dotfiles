@@ -199,10 +199,6 @@
 	path = vim/bundle/nathanaelkane-vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
   ignore = dirty
-[submodule "vim/bundle/tpope-vim-haml"]
-	path = vim/bundle/tpope-vim-haml
-	url = https://github.com/tpope/vim-haml
-  ignore = dirty
 [submodule "vim/bundle/claco-jasmine"]
 	path = vim/bundle/claco-jasmine
 	url = https://github.com/claco/jasmine.vim

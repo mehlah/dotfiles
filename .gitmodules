@@ -2,7 +2,6 @@
 	path = zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
   ignore = dirty
-
 [submodule "vim/bundle/raimondi-delimitMate"]
 	path = vim/bundle/raimondi-delimitMate
 	url = https://github.com/Raimondi/delimitMate
@@ -318,11 +317,11 @@
 [submodule "vim/bundle/briancollins-vim-jst"]
 	path = vim/bundle/briancollins-vim-jst
 	url = https://github.com/briancollins/vim-jst
-  ignore = dirty	
+  ignore = dirty
 [submodule "vim/bundle/pangloss-vim-javascript"]
 	path = vim/bundle/pangloss-vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-  ignore = dirty	
+  ignore = dirty
 [submodule "vim/bundle/skwp-YankRing"]
 	path = vim/bundle/skwp-YankRing
 	url = https://github.com/skwp/YankRing.vim
@@ -330,6 +329,8 @@
 [submodule "vim/bundle/jtratner-vim-flavored-markdown"]
 	path = vim/bundle/jtratner-vim-flavored-markdown
 	url = https://github.com/jtratner/vim-flavored-markdown.git
+  ignore = dirty
 [submodule "vim/bundle/leshill-vim-json"]
 	path = vim/bundle/leshill-vim-json
 	url = https://github.com/leshill/vim-json
+  ignore = dirty

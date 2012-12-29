@@ -330,3 +330,6 @@
 [submodule "vim/bundle/jtratner-vim-flavored-markdown"]
 	path = vim/bundle/jtratner-vim-flavored-markdown
 	url = https://github.com/jtratner/vim-flavored-markdown.git
+[submodule "vim/bundle/leshill-vim-json"]
+	path = vim/bundle/leshill-vim-json
+	url = https://github.com/leshill/vim-json

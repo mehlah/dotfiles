@@ -12,6 +12,8 @@ set nocompatible
 
 " ================ General Config ====================
 
+set binary noeol
+
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
@@ -28,12 +30,6 @@ set hidden
 
 " Turn on syntax highlighting
 syntax on
-
-" No EOL
-set binary noeol
-if has("autocmd")
-  au BufWritePre * :set binary | set noeol
-endif
 
 " ================ Search Settings  =================
 
@@ -74,8 +70,11 @@ set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
-" php specific rules
-autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab linespace=4
+" Specific rules by files type
+if has("autocmd")
+  autocmd FileType php  setlocal ts=4 sts=4 sw=4 noexpandtab linespace=4
+endif
+
 
 " ================ Folds ============================
 

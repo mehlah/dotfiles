@@ -210,10 +210,6 @@
 	path = vim/bundle/wavded-vim-stylus
 	url = https://github.com/wavded/vim-stylus
   ignore = dirty
-[submodule "vim/bundle/vim-scripts-Vim-R-plugin"]
-	path = vim/bundle/vim-scripts-Vim-R-plugin
-	url = https://github.com/vim-scripts/Vim-R-plugin
-  ignore = dirty
 [submodule "vim/bundle/kien-ctrlp"]
 	path = vim/bundle/kien-ctrlp
 	url = https://github.com/kien/ctrlp.vim

@@ -158,10 +158,6 @@
 	path = vim/bundle/kana-vim-textobj-user
 	url = https://github.com/kana/vim-textobj-user
   ignore = dirty
-[submodule "vim/bundle/austintaylor-vim-indentobject"]
-	path = vim/bundle/austintaylor-vim-indentobject
-	url = https://github.com/austintaylor/vim-indentobject
-  ignore = dirty
 [submodule "vim/bundle/kana-vim-textobj-datetime"]
 	path = vim/bundle/kana-vim-textobj-datetime
 	url = https://github.com/kana/vim-textobj-datetime
@@ -185,10 +181,6 @@
 [submodule "vim/bundle/vim-scripts-argtextobj"]
 	path = vim/bundle/vim-scripts-argtextobj
 	url = https://github.com/vim-scripts/argtextobj.vim
-  ignore = dirty
-[submodule "vim/bundle/bootleq-vim-textobj-rubysymbol"]
-	path = vim/bundle/bootleq-vim-textobj-rubysymbol
-	url = https://github.com/bootleq/vim-textobj-rubysymbol
   ignore = dirty
 [submodule "vim/bundle/nathanaelkane-vim-indent-guides"]
 	path = vim/bundle/nathanaelkane-vim-indent-guides
@@ -289,10 +281,6 @@
 [submodule "vim/bundle/astashov-vim-ruby-debugger"]
 	path = vim/bundle/astashov-vim-ruby-debugger
 	url = https://github.com/astashov/vim-ruby-debugger
-  ignore = dirty
-[submodule "vim/bundle/aaronjensen-vim-sass-status"]
-	path = vim/bundle/aaronjensen-vim-sass-status
-	url = https://github.com/aaronjensen/vim-sass-status.git
   ignore = dirty
 [submodule "vim/bundle/skwp-vim-powerline"]
 	path = vim/bundle/skwp-vim-powerline

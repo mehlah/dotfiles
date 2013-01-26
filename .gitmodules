@@ -18,10 +18,6 @@
 	path = vim/bundle/skwp-vim-ruby-conque
 	url = https://github.com/skwp/vim-ruby-conque
   ignore = dirty
-[submodule "vim/bundle/kogakure-vim-sparkup"]
-	path = vim/bundle/kogakure-vim-sparkup
-	url = https://github.com/kogakure/vim-sparkup.git
-  ignore = dirty
 [submodule "vim/bundle/tomtom-tcomment_vim"]
 	path = vim/bundle/tomtom-tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
@@ -85,10 +81,6 @@
 [submodule "vim/bundle/vim-scripts-matchit.zip"]
 	path = vim/bundle/vim-scripts-matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip.git
-  ignore = dirty
-[submodule "vim/bundle/skwp-vim-indexed-search"]
-	path = vim/bundle/skwp-vim-indexed-search
-	url = https://github.com/skwp/vim-indexed-search
   ignore = dirty
 [submodule "vim/bundle/tpope-vim-endwise"]
 	path = vim/bundle/tpope-vim-endwise

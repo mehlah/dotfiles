@@ -218,9 +218,9 @@
 	path = vim/bundle/tomtom-tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
   ignore = dirty
-[submodule "vim/bundle/honza-snipmate-snippets"]
-	path = vim/bundle/honza-snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets.git
+[submodule "vim/bundle/honza-vim-snippets"]
+	path = vim/bundle/honza-vim-snippets
+	url = https://github.com/honza/vim-snippets.git
   ignore = dirty
 [submodule "vim/bundle/skwp-vim-conque"]
 	path = vim/bundle/skwp-vim-conque

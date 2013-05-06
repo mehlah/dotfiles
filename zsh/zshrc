@@ -24,3 +24,7 @@ for config_file ($dotfiles/zsh/*.zsh) source $config_file
 if [[ -a ~/.secrets ]] then
   source ~/.secrets
 fi
+
+if which rbenv > /dev/null; then
+  eval "$(rbenv init -)";
+fi

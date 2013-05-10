@@ -304,3 +304,6 @@
 [submodule "vim/bundle/airblade-vim-gitgutter"]
 	path = vim/bundle/airblade-vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/bundle/veloce-vim-behat"]
+	path = vim/bundle/veloce-vim-behat
+	url = https://github.com/veloce/vim-behat.git

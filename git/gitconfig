@@ -1,5 +1,3 @@
-# set your user tokens as enivornment variables, such as ~/.secrets
-# See the README for examples.
 [color]
   ui = true
 [color "branch"]
@@ -78,10 +76,6 @@
   # tag
   t = tag -n                        # show tags with <n> lines of each tag message
 
-  # svn helpers
-  svnr = svn rebase
-  svnd = svn dcommit
-  svnl = svn log --oneline --show-commit
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
   [mergetool]
@@ -115,3 +109,8 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
+[include]
+  path = .gitconfig.local
+[user]
+  name = Mehdi Lahmam
+  email = mehdi@craftsmen.io

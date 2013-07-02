@@ -1,7 +1,2 @@
-vim/backups
-vim/view
-*un~
-vim/.netrwhist
-vim/tmp
-.netrwhist
-tags
+!bin
+vim/bundle/

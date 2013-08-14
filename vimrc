@@ -56,8 +56,13 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+if has("autocmd")
+  autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab linespace=4
+  autocmd FileType php set binary noeol
+endif
+
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+set nolist listchars=tab:»·,trail:·
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
@@ -67,11 +72,6 @@ if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
-
-" Color scheme
-colorscheme github
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
 set number

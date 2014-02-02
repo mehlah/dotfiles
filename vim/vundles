@@ -26,5 +26,6 @@ Bundle 'vim-scripts/tComment'
 Bundle 'godlygeek/tabular'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mehlah/vim-li3'
+Bundle 'chriskempson/base16-vim'
 
 filetype on

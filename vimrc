@@ -55,11 +55,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-if has("autocmd")
-  autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab linespace=4
-  autocmd FileType php set binary noeol
-endif
-
 " Display extra whitespace
 set nolist listchars=tab:»·,trail:·
 

@@ -80,7 +80,9 @@ export EDITOR=$VISUAL
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init -)"
+fi
+
 # PATH
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/share/npm/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
+export PATH="./bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/share/npm/bin:$PATH"

@@ -15,26 +15,20 @@ echo findutils
 # Install wget with IRI support
 brew install wget --enable-iri
 
-brew tap josegonzalez/homebrew-php
-brew install php54 --without-apache --with-fpm
-brew install php-54-mongo
-brew install php-54-xdebug
-
 # Install everything else
-brew install macvim
 brew install ack
-#brew install exiv2
+brew install ctags
 brew install git
-#brew install imagemagick
+brew install imagemagick
 brew install lynx
-brew install node
-brew install rename
-brew install tree
-brew install tmux
-brew install webkit2png
-brew install nginx
-brew install redis
-brew install gearman
+brew install macvim
 brew install mongodb
-brew install neo4j
+brew install node
 brew install phantomjs
+brew install postgres --no-python
+brew install redis
+brew install rename
+brew install the_silver_searcher
+brew install tmux
+brew install tree
+brew install webkit2png

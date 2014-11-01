@@ -83,3 +83,5 @@
 [user]
   name = Mehdi Lahmam
   email = mehdi@craftsmen.io
+[status]
+	showUntrackedFiles = all

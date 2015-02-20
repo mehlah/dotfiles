@@ -3,7 +3,7 @@ if &compatible
 end
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 " Let Vundle manage Vundle

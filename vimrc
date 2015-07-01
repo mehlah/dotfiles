@@ -113,6 +113,9 @@ nnoremap <C-l> <C-w>l
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
+
 " Always use vertical diffs
 set diffopt+=vertical
 

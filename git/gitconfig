@@ -49,6 +49,9 @@
   verbosity = 1
   tool = mvimdiff
 
+[rebase]
+  autosquash = true
+
 [rerere]
   enabled = true
 

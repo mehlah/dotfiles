@@ -73,16 +73,7 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
-# use vim as the visual editor
-export VISUAL=vim
-export EDITOR=$VISUAL
-
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init -)"
-fi
 
-# PATH
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/share/npm/bin:$PATH"

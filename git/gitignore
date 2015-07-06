@@ -12,3 +12,4 @@ Session.vim
 vendor/bundler_gems
 log/*.log
 tmp/**/*
+dump.rdb

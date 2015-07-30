@@ -77,3 +77,13 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 
+# runs before showing the prompt, to update the current directory in Terminal.app
+if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
+  function chpwd {
+    local SEARCH=' '
+    local REPLACE='%20'
+    local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
+    printf '\e]7;%s\a' "$PWD_URL"
+  }
+  chpwd
+}

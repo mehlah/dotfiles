@@ -12,6 +12,7 @@
   co = checkout
   co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
   cp = cherry-pick -x
+  pf = push --force-with-lease
   unstage = reset HEAD
   uncommit = reset --soft HEAD^
   st = status

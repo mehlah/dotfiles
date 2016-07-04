@@ -5,9 +5,6 @@ alias ll='ls -al'
 alias e="$EDITOR"
 alias v="$VISUAL"
 
-# git
-alias gdm="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
-
 # Bundler
 alias b="bundle"
 

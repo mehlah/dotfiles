@@ -1,0 +1,40 @@
+if &compatible
+  set nocompatible
+end
+
+call plug#begin('~/.vim/bundle')
+
+" Define bundles via Github repos
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'airblade/vim-gitgutter'
+Plug 'chriskempson/base16-vim'
+Plug 'christoomey/vim-run-interactive'
+Plug 'ervandew/supertab'
+Plug 'garbas/vim-snipmate'
+Plug 'godlygeek/tabular'
+Plug 'honza/vim-snippets'
+Plug 'kana/vim-textobj-user'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mehlah/vim-li3'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'nicholaides/words-to-avoid.vim'
+Plug 'othree/html5.vim'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'scrooloose/syntastic'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/ctags.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/tComment'
+
+call plug#end()

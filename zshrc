@@ -23,22 +23,6 @@ git_prompt_info() {
 setopt promptsubst
 export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
 
-# modify the tab title to contain git branch name if applicable
-function set_iterm_title {
-  echo -ne "\e]1;$1\a"
-}
-
-function git_branch {
-  BRANCH_REFS=$(git symbolic-ref HEAD 2>/dev/null) || return
-  GIT_BRANCH="${BRANCH_REFS#refs/heads/}"
-  [ -n "$GIT_BRANCH" ] && echo "$GIT_BRANCH "
-}
-
-function precmd {
-  set_iterm_title "${PWD//*\//} $(git_branch)"
-  PROMPT="%c %{$fg[cyan]%}$(git_branch)%{$reset_color%}%# "
-}
-
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 

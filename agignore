@@ -1,4 +1,6 @@
-log
+.git
 tags
-tmp
-.git/
+/log
+/node_modules/
+/tmp
+/vendor

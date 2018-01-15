@@ -38,6 +38,15 @@ augroup vimrcEx
 
   " Set syntax highlighting for specific file types
   autocmd BufRead,BufNewFile *.md set filetype=markdown
+
+  " ALE linting events
+  set updatetime=1000
+  let g:ale_lint_on_text_changed = 0
+  autocmd CursorHold * call ale#Lint()
+  autocmd CursorHoldI * call ale#Lint()
+  autocmd InsertEnter * call ale#Lint()
+  autocmd InsertLeave * call ale#Lint()
+
 augroup END
 
 " Softtabs, 2 spaces
@@ -97,8 +106,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
+" Move between linting errors
+nnoremap ]r :ALENextWrap<CR>
+nnoremap [r :ALEPreviousWrap<CR>
 
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell

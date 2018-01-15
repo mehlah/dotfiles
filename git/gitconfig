@@ -70,6 +70,7 @@
 [diff]
   mnemonicprefix = true
   submodule = log
+  colorMoved = zebra
 
 [status]
   showUntrackedFiles = all

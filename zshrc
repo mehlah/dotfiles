@@ -48,6 +48,9 @@ HISTFILE=~/.zhistory
 HISTSIZE=4096
 SAVEHIST=4096
 
+# enable shell history in Erlang VM
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # awesome cd movements from zshkit
 setopt autocd autopushd pushdminus pushdsilent pushdtohome cdablevars
 DIRSTACKSIZE=5

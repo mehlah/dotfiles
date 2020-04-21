@@ -6,6 +6,7 @@ tap 'joshuaclayton/formulae'
 tap 'thoughtbot/formulae'
 tap 'universal-ctags/universal-ctags'
 
+brew 'asdf'
 brew 'coreutils'
 brew 'git'
 brew 'heroku/brew/heroku'
@@ -16,10 +17,6 @@ brew 'node'
 brew 'openssl'
 brew 'libyaml' # should come after openssl
 brew 'postgresql', service_restart: true
-brew 'rbenv'
-brew 'readline'
-brew 'ruby'
-brew 'ruby-build'
 brew 'sqlite'
 brew 'the_silver_searcher'
 brew 'thoughtbot/formulae/parity'

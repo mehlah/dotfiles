@@ -5,9 +5,9 @@ export EDITOR=$VISUAL
 # ensure dotfiles bin directory is loaded first
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
+# load asdf if available
+if which asdf &>/dev/null ; then
+  . $(brew --prefix asdf)/asdf.sh
 fi
 
 # mkdir .git/safe in the root of repositories you trust
@@ -74,7 +74,6 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
-
 
 # runs before showing the prompt, to update the current directory in Terminal.app
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {

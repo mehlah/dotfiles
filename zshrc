@@ -2,19 +2,6 @@
 export VISUAL=vim
 export EDITOR=$VISUAL
 
-# ensure dotfiles bin directory is loaded first
-PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
-
-# load asdf if available
-if which asdf &>/dev/null ; then
-  . $(brew --prefix asdf)/asdf.sh
-fi
-
-# mkdir .git/safe in the root of repositories you trust
-PATH=".git/safe/../../bin:$PATH"
-
-export -U PATH
-
 # modify the prompt to contain git branch name if applicable
 git_prompt_info() {
   current_branch=$(git current-branch 2> /dev/null)
@@ -26,13 +13,6 @@ git_prompt_info() {
 setopt promptsubst
 
 export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
-
-# load our own completion functions
-fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
-
-# completion
-autoload -U compinit
-compinit
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
@@ -89,3 +69,23 @@ if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
   }
   chpwd
 }
+
+# load our own completion functions
+fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
+
+# completion
+autoload -U compinit
+compinit
+
+# ensure dotfiles bin directory is loaded first
+PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+# load asdf if available
+if which asdf &>/dev/null ; then
+  . $(brew --prefix asdf)/asdf.sh
+fi
+
+# mkdir .git/safe in the root of repositories you trust
+PATH=".git/safe/../../bin:$PATH"
+
+export -U PATH

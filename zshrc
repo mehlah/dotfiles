@@ -56,9 +56,6 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
-# aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
-
 # runs before showing the prompt, to update the current directory in Terminal.app
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
   function chpwd {
@@ -89,3 +86,6 @@ fi
 PATH=".git/safe/../../bin:$PATH"
 
 export -U PATH
+
+# aliases
+[[ -f ~/.aliases ]] && source ~/.aliases

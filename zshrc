@@ -1,3 +1,8 @@
+# load custom executable functions
+for function in ~/.zsh/functions/*; do
+  source $function
+done
+
 # use vim as the visual editor
 export VISUAL=vim
 export EDITOR=$VISUAL
@@ -13,11 +18,6 @@ git_prompt_info() {
 setopt promptsubst
 
 export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
-
-# load custom executable functions
-for function in ~/.zsh/functions/*; do
-  source $function
-done
 
 # makes color constants available
 autoload -U colors

@@ -3,7 +3,7 @@ export VISUAL=vim
 export EDITOR=$VISUAL
 
 # ensure dotfiles bin directory is loaded first
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # load asdf if available
 if which asdf &>/dev/null ; then
@@ -11,7 +11,9 @@ if which asdf &>/dev/null ; then
 fi
 
 # mkdir .git/safe in the root of repositories you trust
-export PATH=".git/safe/../../bin:$PATH"
+PATH=".git/safe/../../bin:$PATH"
+
+export -U PATH
 
 # modify the prompt to contain git branch name if applicable
 git_prompt_info() {

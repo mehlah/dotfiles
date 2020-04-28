@@ -60,7 +60,7 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
 
 # completion
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # ensure dotfiles bin directory is loaded first

@@ -59,9 +59,13 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 # load our own completion functions
 fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
 
-# completion
+# completion; use cache if updated within 24h
 autoload -Uz compinit
-compinit
+if [[ -n $HOME/.zcompdump(#qN.mh+24) ]]; then
+  compinit -d $HOME/.zcompdump;
+else
+  compinit -C;
+fi;
 
 # ensure dotfiles bin directory is loaded first
 PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"

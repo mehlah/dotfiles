@@ -4,7 +4,7 @@
 .DS_Store
 .bundle
 .byebug_history
-.env
+.env.local
 .git/
 /bower_components/
 /log

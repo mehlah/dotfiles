@@ -71,9 +71,7 @@ fi;
 PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # load asdf if available
-if which asdf &>/dev/null ; then
-  . $(brew --prefix asdf)/asdf.sh
-fi
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
